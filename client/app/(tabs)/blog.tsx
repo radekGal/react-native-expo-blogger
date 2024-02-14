@@ -15,7 +15,7 @@ const Blog = () => {
   useEffect(() => {
     (async () => {
       try {
-        const res = await axios.get('http://192.168.0.5:5000/api/posts');
+        const res = await axios.get('http://localhost:5000/api/posts');
         setData(res.data);
         setSearchData(res.data);
       } catch(err) {

@@ -20,7 +20,7 @@ const DetailPage = () => {
     (async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`http://192.168.0.5:5000/api/posts/${id}`);
+        const res = await axios.get(`http://localhost:5000/api/posts/${id}`);
         setItem(res.data);
       } catch(err) {
         console.log('Something was wrong', err);
