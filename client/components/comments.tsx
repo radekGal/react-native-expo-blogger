@@ -18,7 +18,7 @@ export const Comments = ({ postId }: { postId: string }) => {
   useEffect(() => {
     (async () => {
       try {
-        const response = await axios.get(`http://192.168.0.5:5000/api/comments/${postId}`);
+        const response = await axios.get(`http://localhost:5000/api/comments/${postId}`);
         setComments(response.data);
       } catch(err) {
         console.log('Something was wrong', err);
